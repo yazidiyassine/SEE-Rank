@@ -7,11 +7,11 @@ Official reproduction repository for the empirical spectral diagnostic framework
 ## Overview
 
 This repository provides an automated, reproducible pipeline for:
-1. **Spectral Measurement**: Tracking exact singular value distributions, stable rank $\operatorname{sr}(\Delta W)$, effective rank $\operatorname{erank}(\Delta W)$, and rank utilization $\rho(\Delta W, r)$ across training checkpoints.
-2. **Scaling Law Characterization**: Modeling sub-linear capacity scaling $\operatorname{sr}(r) \propto r^\beta$ against logarithmic and saturating alternatives via Akaike Information Criterion (AIC).
+1. **Spectral Measurement**: Tracking exact singular value distributions, stable rank $\mathrm{sr}(\Delta W)$, effective rank $\mathrm{erank}(\Delta W)$, and rank utilization $\rho(\Delta W, r)$ across training checkpoints.
+2. **Scaling Law Characterization**: Modeling sub-linear capacity scaling $\mathrm{sr}(r) \propto r^\beta$ against logarithmic and saturating alternatives via Akaike Information Criterion (AIC).
 3. **Invariance Testing**: Evaluating adapter spectral collapse under weight decay, high-rate dropout, and Weight-Decomposed Low-Rank Adaptation (DoRA).
 4. **Construct Validity**: In-place SVD truncation tests ($k \in \{1, r\}$) verifying whether leading singular directions carry downstream task utility.
-5. **SEE-Rank Protocol**: An early-probing decision rule evaluating marginal spectral gains $g_k = \frac{\operatorname{sr}(r_k)}{\operatorname{sr}(r_{k-1})} - 1$ at early checkpoints to stop rank escalation before completing full training sweeps.
+5. **SEE-Rank Protocol**: An early-probing decision rule evaluating marginal spectral gains $g_k = \frac{\mathrm{sr}(r_k)}{\mathrm{sr}(r_{k-1})} - 1$ at early checkpoints to stop rank escalation before completing full training sweeps.
 
 ---
 
