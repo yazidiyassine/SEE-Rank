@@ -1,0 +1,148 @@
+5.9s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+5.9s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+5.9s 3 0.00s - to python to disable frozen modules.
+5.9s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+6.5s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.5s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.5s 7 0.00s - to python to disable frozen modules.
+6.5s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+28.3s 9 (i) HF_TOKEN not set in the environment; proceeding without an explicit huggingface_hub login. Set HF_TOKEN if the model/dataset needs auth.
+53.9s 10 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+53.9s 11 
+53.9s 12 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+53.9s 13 Device : cuda:0
+53.9s 14 GPU    : Tesla T4  (pinned to a single GPU; 2 visible)
+53.9s 15 VRAM   : 14.6 GB
+54.6s 16 
+54.6s 17 Loading microsoft/phi-2  (4bit=True, gpu=0)...
+88.6s 18 ✓ Model loaded
+88.6s 19 ✓ Target modules (auto-resolved, model_type=phi, scope=attn): ['q_proj', 'v_proj']
+88.6s 20 ✓ This will attach LoRA to 64 Linear leaves per run (PERF-2 sanity check — if this looks too high for the requested scope, TARGET_SCOPE resolution needs another look before a long run).
+88.6s 21 Loading Alpaca-cleaned...
+90.7s 22 ✓ dedup removed 11 rows | train=2000 val=40 | instruction overlap=0
+92.7s 23 
+92.7s 24 8 methods × 2 seeds = 16 runs
+92.9s 25 
+92.9s 26 ── LoRA_r4_s42 ────────────────────────────────────────
+92.9s 27 method=LoRA_r4 rank=4 alpha=8 params=1,310,720 wd=0.0 drop=0.05 dora=False
+780.6s 28 TruthfulQA: 0.3000 (6/20)
+784.1s 29 ARC-Easy: 0.7500 (15/20)
+1129.7s 30 PPL=3.57  MC1=0.3  ARC=0.75  mean_sr=2.2781  non_finite=0  8.7 min
+1130.1s 31 
+1130.1s 32 ── LoRA_r4_s123 ────────────────────────────────────────
+1130.1s 33 method=LoRA_r4 rank=4 alpha=8 params=1,310,720 wd=0.0 drop=0.05 dora=False
+1817.3s 34 TruthfulQA: 0.3000 (6/20)
+1819.8s 35 ARC-Easy: 0.7500 (15/20)
+2180.8s 36 PPL=3.58  MC1=0.3  ARC=0.75  mean_sr=2.2604  non_finite=0  8.7 min
+2181.3s 37 
+2181.3s 38 ── LoRA_r8_s42 ────────────────────────────────────────
+2181.3s 39 method=LoRA_r8 rank=8 alpha=16 params=2,621,440 wd=0.0 drop=0.05 dora=False
+3031.9s 40 TruthfulQA: 0.3000 (6/20)
+3034.4s 41 ARC-Easy: 0.7500 (15/20)
+3451.2s 42 PPL=3.57  MC1=0.3  ARC=0.75  mean_sr=3.0884  non_finite=0  10.8 min
+3451.6s 43 
+3451.6s 44 ── LoRA_r8_s123 ────────────────────────────────────────
+3451.6s 45 method=LoRA_r8 rank=8 alpha=16 params=2,621,440 wd=0.0 drop=0.05 dora=False
+4306.4s 46 TruthfulQA: 0.3000 (6/20)
+4308.9s 47 ARC-Easy: 0.7500 (15/20)
+4735.3s 48 PPL=3.56  MC1=0.3  ARC=0.75  mean_sr=3.0899  non_finite=0  10.8 min
+4735.7s 49 
+4735.7s 50 ── LoRA_r16_s42 ────────────────────────────────────────
+4735.7s 51 method=LoRA_r16 rank=16 alpha=32 params=5,242,880 wd=0.0 drop=0.05 dora=False
+5779.3s 52 TruthfulQA: 0.3000 (6/20)
+5781.8s 53 ARC-Easy: 0.7500 (15/20)
+6279.5s 54 PPL=3.58  MC1=0.3  ARC=0.75  mean_sr=3.5204  non_finite=0  13.2 min
+6280.0s 55 
+6280.0s 56 ── LoRA_r16_s123 ────────────────────────────────────────
+6280.0s 57 method=LoRA_r16 rank=16 alpha=32 params=5,242,880 wd=0.0 drop=0.05 dora=False
+7323.4s 58 TruthfulQA: 0.3000 (6/20)
+7325.9s 59 ARC-Easy: 0.7500 (15/20)
+7831.2s 60 PPL=3.85  MC1=0.3  ARC=0.75  mean_sr=3.3271  non_finite=0  13.2 min
+7831.7s 61 
+7831.7s 62 ── LoRA_r32_s42 ────────────────────────────────────────
+7831.7s 63 method=LoRA_r32 rank=32 alpha=64 params=10,485,760 wd=0.0 drop=0.05 dora=False
+9148.6s 64 TruthfulQA: 0.3000 (6/20)
+9151.1s 65 ARC-Easy: 0.7500 (15/20)
+9832.1s 66 PPL=3.53  MC1=0.3  ARC=0.75  mean_sr=4.4016  non_finite=0  16.6 min
+9832.5s 67 
+9832.5s 68 ── LoRA_r32_s123 ────────────────────────────────────────
+9832.5s 69 method=LoRA_r32 rank=32 alpha=64 params=10,485,760 wd=0.0 drop=0.05 dora=False
+11148.5s 70 TruthfulQA: 0.3000 (6/20)
+11151.0s 71 ARC-Easy: 0.7500 (15/20)
+11818.1s 72 PPL=3.54  MC1=0.3  ARC=0.75  mean_sr=4.0199  non_finite=0  16.6 min
+11818.5s 73 
+11818.5s 74 ── LoRA_r64_s42 ────────────────────────────────────────
+11818.7s 75 method=LoRA_r64 rank=64 alpha=128 params=20,971,520 wd=0.0 drop=0.05 dora=False
+13339.5s 76 TruthfulQA: 0.3500 (7/20)
+13342.1s 77 ARC-Easy: 0.7500 (15/20)
+14164.5s 78 PPL=3.94  MC1=0.35  ARC=0.75  mean_sr=4.2189  non_finite=0  19.1 min
+14165.0s 79 
+14165.0s 80 ── LoRA_r64_s123 ────────────────────────────────────────
+14165.1s 81 method=LoRA_r64 rank=64 alpha=128 params=20,971,520 wd=0.0 drop=0.05 dora=False
+15688.7s 82 TruthfulQA: 0.3000 (6/20)
+15691.3s 83 ARC-Easy: 0.7500 (15/20)
+16499.4s 84 PPL=3.44  MC1=0.3  ARC=0.75  mean_sr=4.8498  non_finite=0  19.2 min
+16499.9s 85 
+16499.9s 86 ── LoRA_r16_wd_s42 ────────────────────────────────────────
+16499.9s 87 method=LoRA_r16_wd rank=16 alpha=32 params=5,242,880 wd=0.1 drop=0.05 dora=False
+17550.1s 88 TruthfulQA: 0.3000 (6/20)
+17552.7s 89 ARC-Easy: 0.7500 (15/20)
+18050.3s 90 PPL=3.54  MC1=0.3  ARC=0.75  mean_sr=3.6925  non_finite=0  13.3 min
+18050.8s 91 
+18050.8s 92 ── LoRA_r16_wd_s123 ────────────────────────────────────────
+18050.8s 93 method=LoRA_r16_wd rank=16 alpha=32 params=5,242,880 wd=0.1 drop=0.05 dora=False
+19096.4s 94 TruthfulQA: 0.3000 (6/20)
+19099.0s 95 ARC-Easy: 0.7500 (15/20)
+19642.4s 96 PPL=3.61  MC1=0.3  ARC=0.75  mean_sr=3.5678  non_finite=0  13.2 min
+19642.9s 97 
+19642.9s 98 ── LoRA_r16_drop_s42 ────────────────────────────────────────
+19642.9s 99 method=LoRA_r16_drop rank=16 alpha=32 params=5,242,880 wd=0.0 drop=0.2 dora=False
+20697.1s 100 TruthfulQA: 0.3000 (6/20)
+20699.7s 101 ARC-Easy: 0.7500 (15/20)
+21198.9s 102 PPL=3.55  MC1=0.3  ARC=0.75  mean_sr=3.8874  non_finite=0  13.3 min
+21199.4s 103 
+21199.4s 104 ── LoRA_r16_drop_s123 ────────────────────────────────────────
+21199.4s 105 method=LoRA_r16_drop rank=16 alpha=32 params=5,242,880 wd=0.0 drop=0.2 dora=False
+22246.0s 106 TruthfulQA: 0.3000 (6/20)
+22248.5s 107 ARC-Easy: 0.7500 (15/20)
+22776.2s 108 PPL=3.60  MC1=0.3  ARC=0.75  mean_sr=3.679  non_finite=0  13.2 min
+22776.7s 109 
+22776.7s 110 ── DoRA_r16_s42 ────────────────────────────────────────
+22776.9s 111 method=DoRA_r16 rank=16 alpha=32 params=5,406,720 wd=0.0 drop=0.05 dora=True
+23844.5s 112 TruthfulQA: 0.3000 (6/20)
+23849.4s 113 ARC-Easy: 0.7500 (15/20)
+24351.4s 114 PPL=3.54  MC1=0.3  ARC=0.75  mean_sr=3.6611  non_finite=0  13.5 min
+24351.9s 115 
+24351.9s 116 ── DoRA_r16_s123 ────────────────────────────────────────
+24352.0s 117 method=DoRA_r16 rank=16 alpha=32 params=5,406,720 wd=0.0 drop=0.05 dora=True
+25414.2s 118 TruthfulQA: 0.3000 (6/20)
+25419.1s 119 ARC-Easy: 0.7500 (15/20)
+25941.8s 120 PPL=3.52  MC1=0.3  ARC=0.75  mean_sr=3.5882  non_finite=0  13.4 min
+25942.4s 121 
+25942.4s 122 ✓ /kaggle/working/spectral_phi-2_results.csv (16 rows)
+25942.4s 123 ✓ /kaggle/working/spectral_phi-2_trajectory.csv (7168 rows)
+25942.4s 124 ✓ /kaggle/working/spectral_phi-2_svd.csv (22016 rows)
+25942.4s 125 ✓ /kaggle/working/spectral_phi-2_downstream_items.csv (640 rows)
+25942.4s 126 ✓ /kaggle/working/spectral_phi-2_truncation.csv (32 rows)
+25942.4s 127 ✓ /kaggle/working/spectral_phi-2_see_rank.csv (5 rows)
+25942.4s 128 
+25942.4s 129 Functional-form fit (lower AIC = better):
+25942.4s 130 power_law: {'beta': 0.24442346462911718, 'a': 1.748379115160747, 'aic': -24.347439897970972}
+25942.4s 131 logarithmic: {'a': 0.8153823482693549, 'b': 1.2830638363281215, 'aic': -17.484949842608103}
+25942.4s 132 saturating: {'S': 4.871251954363149, 'r0': np.float64(4.921608040201005), 'aic': -22.50091419070145}
+25942.4s 133 
+25942.4s 134 Seed-level (not cell-mean) correlations vs mean_sr_final:
+25942.4s 135 {'x': 'mean_sr_final', 'y': 'final_ppl', 'n': 16, 'r': -0.0453, 'p': 0.867552}
+25942.4s 136 {'x': 'mean_sr_final', 'y': 'truthfulqa_mc1', 'n': 16, 'r': 0.2531, 'p': 0.34425}
+25942.4s 137 {'x': 'mean_sr_final', 'y': 'arc_easy', 'n': 16, 'r': nan, 'p': nan}
+25942.4s 138 ✓ /kaggle/working/spectral_phi-2_metadata.json
+25942.4s 139 
+25942.4s 140 DONE in 431.5 min
+25947.5s 141 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+25947.5s 142 cells[i][c] = re.sub('\\\\\|', '|', cell)
+25947.7s 143 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+25947.7s 144 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+25948.3s 145 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+25948.8s 146 [NbConvertApp] Writing 1001312 bytes to __notebook__.ipynb
+25951.0s 147 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+25952.2s 148 [NbConvertApp] Writing 1280152 bytes to __results__.html

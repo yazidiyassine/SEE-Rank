@@ -1,0 +1,387 @@
+8.2s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.2s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.2s 3 0.00s - to python to disable frozen modules.
+8.2s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.8s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.8s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.8s 7 0.00s - to python to disable frozen modules.
+8.8s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+71.3s 9 Device : cuda:0
+71.3s 10 GPU    : Tesla T4  (pinned to a single GPU; 2 visible)
+71.3s 11 VRAM   : 14.6 GB
+72.8s 12 
+72.8s 13 Loading Qwen/Qwen2.5-1.5B  (4bit=True, gpu=0)...
+97.1s 14 ✓ Model loaded
+97.1s 15 ✓ Target modules (auto-resolved, model_type=qwen2): ['q_proj', 'v_proj']
+97.1s 16 Loading Alpaca-cleaned...
+100.2s 17 ✓ dedup removed 11 rows | train=2000 val=80 | instruction overlap=0
+104.3s 18 
+104.3s 19 8 methods × 2 seeds = 16 runs
+104.5s 20 
+104.5s 21 ── LoRA_r4_s42 ────────────────────────────────────────
+104.5s 22 method=LoRA_r4 rank=4 alpha=8 params=544,768 wd=0.0 drop=0.05 dora=False
+302.6s 23 `trust_remote_code` is not supported anymore.
+302.6s 24 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+302.6s 25 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+302.6s 26 
+302.6s 27 `trust_remote_code` is not supported anymore.
+302.6s 28 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+302.6s 29 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+310.4s 30 `trust_remote_code` is not supported anymore.
+310.4s 31 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+310.4s 32 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+310.4s 33 
+310.4s 34 `trust_remote_code` is not supported anymore.
+310.4s 35 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+310.4s 36 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+310.6s 37 TruthfulQA: 0.3250 (13/40)
+317.4s 38 ARC-Easy: 0.7250 (29/40)
+380.3s 39 PPL=3.99  MC1=0.325  ARC=0.725  mean_sr=1.6134  non_finite=0  2.8 min
+380.5s 40 
+380.5s 41 ── LoRA_r4_s123 ────────────────────────────────────────
+380.5s 42 method=LoRA_r4 rank=4 alpha=8 params=544,768 wd=0.0 drop=0.05 dora=False
+582.4s 43 `trust_remote_code` is not supported anymore.
+582.4s 44 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+582.4s 45 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+582.4s 46 
+582.4s 47 `trust_remote_code` is not supported anymore.
+582.4s 48 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+582.4s 49 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+588.5s 50 `trust_remote_code` is not supported anymore.
+588.5s 51 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+588.5s 52 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+588.5s 53 
+588.5s 54 `trust_remote_code` is not supported anymore.
+588.5s 55 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+588.5s 56 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+588.7s 57 TruthfulQA: 0.3250 (13/40)
+593.8s 58 ARC-Easy: 0.7250 (29/40)
+650.7s 59 PPL=3.98  MC1=0.325  ARC=0.725  mean_sr=1.6011  non_finite=0  2.9 min
+650.9s 60 
+650.9s 61 ── LoRA_r8_s42 ────────────────────────────────────────
+650.9s 62 method=LoRA_r8 rank=8 alpha=16 params=1,089,536 wd=0.0 drop=0.05 dora=False
+875.7s 63 `trust_remote_code` is not supported anymore.
+875.7s 64 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+875.7s 65 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+875.7s 66 
+875.7s 67 `trust_remote_code` is not supported anymore.
+875.7s 68 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+875.7s 69 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+881.9s 70 `trust_remote_code` is not supported anymore.
+881.9s 71 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+881.9s 72 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+881.9s 73 
+881.9s 74 `trust_remote_code` is not supported anymore.
+881.9s 75 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+881.9s 76 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+882.1s 77 TruthfulQA: 0.3250 (13/40)
+887.2s 78 ARC-Easy: 0.7250 (29/40)
+953.1s 79 PPL=3.89  MC1=0.325  ARC=0.725  mean_sr=1.8376  non_finite=0  3.2 min
+953.5s 80 
+953.5s 81 ── LoRA_r8_s123 ────────────────────────────────────────
+953.5s 82 method=LoRA_r8 rank=8 alpha=16 params=1,089,536 wd=0.0 drop=0.05 dora=False
+1175.9s 83 `trust_remote_code` is not supported anymore.
+1175.9s 84 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+1175.9s 85 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+1175.9s 86 
+1175.9s 87 `trust_remote_code` is not supported anymore.
+1175.9s 88 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+1175.9s 89 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+1182.1s 90 `trust_remote_code` is not supported anymore.
+1182.1s 91 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+1182.1s 92 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+1182.1s 93 
+1182.1s 94 `trust_remote_code` is not supported anymore.
+1182.1s 95 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+1182.1s 96 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+1182.3s 97 TruthfulQA: 0.3250 (13/40)
+1187.6s 98 ARC-Easy: 0.7250 (29/40)
+1255.1s 99 PPL=3.89  MC1=0.325  ARC=0.725  mean_sr=1.8012  non_finite=0  3.2 min
+1255.4s 100 
+1255.4s 101 ── LoRA_r16_s42 ────────────────────────────────────────
+1255.4s 102 method=LoRA_r16 rank=16 alpha=32 params=2,179,072 wd=0.0 drop=0.05 dora=False
+1506.2s 103 `trust_remote_code` is not supported anymore.
+1506.2s 104 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+1506.2s 105 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+1506.2s 106 
+1506.2s 107 `trust_remote_code` is not supported anymore.
+1506.2s 108 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+1506.2s 109 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+1512.7s 110 `trust_remote_code` is not supported anymore.
+1512.7s 111 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+1512.7s 112 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+1512.7s 113 
+1512.7s 114 `trust_remote_code` is not supported anymore.
+1512.7s 115 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+1512.7s 116 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+1512.9s 117 TruthfulQA: 0.3250 (13/40)
+1518.4s 118 ARC-Easy: 0.7250 (29/40)
+1592.5s 119 PPL=3.82  MC1=0.325  ARC=0.725  mean_sr=2.0544  non_finite=0  3.6 min
+1592.9s 120 
+1592.9s 121 ── LoRA_r16_s123 ────────────────────────────────────────
+1592.9s 122 method=LoRA_r16 rank=16 alpha=32 params=2,179,072 wd=0.0 drop=0.05 dora=False
+1843.0s 123 `trust_remote_code` is not supported anymore.
+1843.0s 124 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+1843.0s 125 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+1843.0s 126 
+1843.0s 127 `trust_remote_code` is not supported anymore.
+1843.0s 128 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+1843.0s 129 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+1849.4s 130 `trust_remote_code` is not supported anymore.
+1849.4s 131 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+1849.4s 132 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+1849.4s 133 
+1849.4s 134 `trust_remote_code` is not supported anymore.
+1849.4s 135 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+1849.4s 136 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+1849.6s 137 TruthfulQA: 0.3250 (13/40)
+1855.1s 138 ARC-Easy: 0.7250 (29/40)
+1930.7s 139 PPL=3.83  MC1=0.325  ARC=0.725  mean_sr=2.0414  non_finite=0  3.6 min
+1931.1s 140 
+1931.1s 141 ── LoRA_r32_s42 ────────────────────────────────────────
+1931.1s 142 method=LoRA_r32 rank=32 alpha=64 params=4,358,144 wd=0.0 drop=0.05 dora=False
+2233.1s 143 `trust_remote_code` is not supported anymore.
+2233.1s 144 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+2233.1s 145 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+2233.1s 146 
+2233.1s 147 `trust_remote_code` is not supported anymore.
+2233.1s 148 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+2233.1s 149 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+2239.5s 150 `trust_remote_code` is not supported anymore.
+2239.5s 151 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+2239.5s 152 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+2239.5s 153 
+2239.5s 154 `trust_remote_code` is not supported anymore.
+2239.5s 155 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+2239.5s 156 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+2239.7s 157 TruthfulQA: 0.3500 (14/40)
+2245.2s 158 ARC-Easy: 0.7500 (30/40)
+2338.7s 159 PPL=3.75  MC1=0.35  ARC=0.75  mean_sr=2.2293  non_finite=0  4.4 min
+2339.1s 160 
+2339.1s 161 ── LoRA_r32_s123 ────────────────────────────────────────
+2339.1s 162 method=LoRA_r32 rank=32 alpha=64 params=4,358,144 wd=0.0 drop=0.05 dora=False
+2639.6s 163 `trust_remote_code` is not supported anymore.
+2639.6s 164 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+2639.6s 165 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+2639.6s 166 
+2639.6s 167 `trust_remote_code` is not supported anymore.
+2639.6s 168 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+2639.6s 169 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+2646.0s 170 `trust_remote_code` is not supported anymore.
+2646.0s 171 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+2646.0s 172 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+2646.0s 173 
+2646.0s 174 `trust_remote_code` is not supported anymore.
+2646.0s 175 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+2646.0s 176 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+2646.2s 177 TruthfulQA: 0.3500 (14/40)
+2651.8s 178 ARC-Easy: 0.7500 (30/40)
+2745.0s 179 PPL=3.75  MC1=0.35  ARC=0.75  mean_sr=2.2324  non_finite=0  4.4 min
+2745.4s 180 
+2745.4s 181 ── LoRA_r64_s42 ────────────────────────────────────────
+2745.4s 182 method=LoRA_r64 rank=64 alpha=128 params=8,716,288 wd=0.0 drop=0.05 dora=False
+3085.3s 183 `trust_remote_code` is not supported anymore.
+3085.3s 184 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+3085.3s 185 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+3085.3s 186 
+3085.3s 187 `trust_remote_code` is not supported anymore.
+3085.3s 188 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+3085.3s 189 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+3091.7s 190 `trust_remote_code` is not supported anymore.
+3091.7s 191 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+3091.7s 192 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+3091.7s 193 
+3091.7s 194 `trust_remote_code` is not supported anymore.
+3091.7s 195 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+3091.7s 196 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+3091.9s 197 TruthfulQA: 0.3750 (15/40)
+3097.2s 198 ARC-Easy: 0.7500 (30/40)
+3198.8s 199 PPL=3.71  MC1=0.375  ARC=0.75  mean_sr=2.433  non_finite=0  4.9 min
+3199.3s 200 
+3199.3s 201 ── LoRA_r64_s123 ────────────────────────────────────────
+3199.3s 202 method=LoRA_r64 rank=64 alpha=128 params=8,716,288 wd=0.0 drop=0.05 dora=False
+3540.0s 203 `trust_remote_code` is not supported anymore.
+3540.0s 204 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+3540.0s 205 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+3540.0s 206 
+3540.0s 207 `trust_remote_code` is not supported anymore.
+3540.0s 208 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+3540.0s 209 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+3546.3s 210 `trust_remote_code` is not supported anymore.
+3546.3s 211 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+3546.3s 212 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+3546.3s 213 
+3546.3s 214 `trust_remote_code` is not supported anymore.
+3546.3s 215 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+3546.3s 216 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+3546.5s 217 TruthfulQA: 0.3750 (15/40)
+3551.7s 218 ARC-Easy: 0.7500 (30/40)
+3653.5s 219 PPL=3.71  MC1=0.375  ARC=0.75  mean_sr=2.504  non_finite=0  4.9 min
+3653.9s 220 
+3653.9s 221 ── LoRA_r16_wd_s42 ────────────────────────────────────────
+3653.9s 222 method=LoRA_r16_wd rank=16 alpha=32 params=2,179,072 wd=0.1 drop=0.05 dora=False
+3904.1s 223 `trust_remote_code` is not supported anymore.
+3904.1s 224 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+3904.1s 225 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+3904.1s 226 
+3904.1s 227 `trust_remote_code` is not supported anymore.
+3904.1s 228 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+3904.1s 229 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+3910.6s 230 `trust_remote_code` is not supported anymore.
+3910.6s 231 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+3910.6s 232 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+3910.6s 233 
+3910.6s 234 `trust_remote_code` is not supported anymore.
+3910.6s 235 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+3910.6s 236 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+3910.8s 237 TruthfulQA: 0.3250 (13/40)
+3916.2s 238 ARC-Easy: 0.7250 (29/40)
+3990.7s 239 PPL=3.82  MC1=0.325  ARC=0.725  mean_sr=2.0534  non_finite=0  3.6 min
+3991.2s 240 
+3991.2s 241 ── LoRA_r16_wd_s123 ────────────────────────────────────────
+3991.2s 242 method=LoRA_r16_wd rank=16 alpha=32 params=2,179,072 wd=0.1 drop=0.05 dora=False
+4241.8s 243 `trust_remote_code` is not supported anymore.
+4241.8s 244 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+4241.8s 245 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+4241.8s 246 
+4241.8s 247 `trust_remote_code` is not supported anymore.
+4241.8s 248 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+4241.8s 249 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+4248.2s 250 `trust_remote_code` is not supported anymore.
+4248.2s 251 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+4248.2s 252 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+4248.2s 253 
+4248.2s 254 `trust_remote_code` is not supported anymore.
+4248.2s 255 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+4248.2s 256 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+4248.4s 257 TruthfulQA: 0.3250 (13/40)
+4253.9s 258 ARC-Easy: 0.7250 (29/40)
+4328.5s 259 PPL=3.83  MC1=0.325  ARC=0.725  mean_sr=2.0413  non_finite=0  3.6 min
+4328.9s 260 
+4328.9s 261 ── LoRA_r16_drop_s42 ────────────────────────────────────────
+4328.9s 262 method=LoRA_r16_drop rank=16 alpha=32 params=2,179,072 wd=0.0 drop=0.2 dora=False
+4582.0s 263 `trust_remote_code` is not supported anymore.
+4582.0s 264 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+4582.0s 265 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+4582.0s 266 
+4582.0s 267 `trust_remote_code` is not supported anymore.
+4582.0s 268 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+4582.0s 269 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+4588.2s 270 `trust_remote_code` is not supported anymore.
+4588.2s 271 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+4588.2s 272 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+4588.2s 273 
+4588.2s 274 `trust_remote_code` is not supported anymore.
+4588.2s 275 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+4588.2s 276 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+4588.4s 277 TruthfulQA: 0.3250 (13/40)
+4593.8s 278 ARC-Easy: 0.7250 (29/40)
+4667.1s 279 PPL=3.82  MC1=0.325  ARC=0.725  mean_sr=2.0913  non_finite=0  3.7 min
+4667.5s 280 
+4667.5s 281 ── LoRA_r16_drop_s123 ────────────────────────────────────────
+4667.5s 282 method=LoRA_r16_drop rank=16 alpha=32 params=2,179,072 wd=0.0 drop=0.2 dora=False
+4917.5s 283 `trust_remote_code` is not supported anymore.
+4917.5s 284 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+4917.5s 285 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+4917.5s 286 
+4917.5s 287 `trust_remote_code` is not supported anymore.
+4917.5s 288 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+4917.5s 289 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+4923.8s 290 `trust_remote_code` is not supported anymore.
+4923.8s 291 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+4923.8s 292 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+4923.8s 293 
+4923.8s 294 `trust_remote_code` is not supported anymore.
+4923.8s 295 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+4923.8s 296 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+4924.0s 297 TruthfulQA: 0.3250 (13/40)
+4929.1s 298 ARC-Easy: 0.7250 (29/40)
+5004.2s 299 PPL=3.83  MC1=0.325  ARC=0.725  mean_sr=2.0771  non_finite=0  3.6 min
+5004.7s 300 
+5004.7s 301 ── DoRA_r16_s42 ────────────────────────────────────────
+5004.7s 302 method=DoRA_r16 rank=16 alpha=32 params=2,229,248 wd=0.0 drop=0.05 dora=True
+5258.6s 303 `trust_remote_code` is not supported anymore.
+5258.6s 304 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+5258.6s 305 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+5258.6s 306 
+5258.6s 307 `trust_remote_code` is not supported anymore.
+5258.6s 308 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+5258.6s 309 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+5266.0s 310 `trust_remote_code` is not supported anymore.
+5266.0s 311 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+5266.0s 312 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+5266.0s 313 
+5266.0s 314 `trust_remote_code` is not supported anymore.
+5266.0s 315 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+5266.0s 316 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+5266.2s 317 TruthfulQA: 0.3250 (13/40)
+5272.8s 318 ARC-Easy: 0.7250 (29/40)
+5345.1s 319 PPL=3.81  MC1=0.325  ARC=0.725  mean_sr=2.0573  non_finite=0  3.7 min
+5345.6s 320 
+5345.6s 321 ── DoRA_r16_s123 ────────────────────────────────────────
+5345.6s 322 method=DoRA_r16 rank=16 alpha=32 params=2,229,248 wd=0.0 drop=0.05 dora=True
+5598.4s 323 `trust_remote_code` is not supported anymore.
+5598.4s 324 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+5598.4s 325 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+5598.4s 326 
+5598.4s 327 `trust_remote_code` is not supported anymore.
+5598.4s 328 Please check that the Hugging Face dataset 'truthful_qa' isn't based on a loading script and remove `trust_remote_code`.
+5598.4s 329 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+5605.6s 330 `trust_remote_code` is not supported anymore.
+5605.6s 331 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+5605.6s 332 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+5605.6s 333 
+5605.6s 334 `trust_remote_code` is not supported anymore.
+5605.6s 335 Please check that the Hugging Face dataset 'allenai/ai2_arc' isn't based on a loading script and remove `trust_remote_code`.
+5605.6s 336 If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+5605.8s 337 TruthfulQA: 0.3250 (13/40)
+5612.1s 338 ARC-Easy: 0.7250 (29/40)
+5686.6s 339 PPL=3.83  MC1=0.325  ARC=0.725  mean_sr=2.0436  non_finite=0  3.6 min
+5687.3s 340 
+5687.3s 341 ✓ /kaggle/working/spectral_Qwen2.5-1.5B_results.csv (16 rows)
+5687.3s 342 ✓ /kaggle/working/spectral_Qwen2.5-1.5B_trajectory.csv (12544 rows)
+5687.3s 343 ✓ /kaggle/working/spectral_Qwen2.5-1.5B_svd.csv (19264 rows)
+5687.3s 344 ✓ /kaggle/working/spectral_Qwen2.5-1.5B_downstream_items.csv (1280 rows)
+5687.3s 345 ✓ /kaggle/working/spectral_Qwen2.5-1.5B_truncation.csv (32 rows)
+5687.3s 346 ✓ /kaggle/working/spectral_Qwen2.5-1.5B_see_rank.csv (5 rows)
+5687.3s 347 
+5687.3s 348 Functional-form fit (lower AIC = better):
+5687.3s 349 power_law: {'beta': 0.15322215327810723, 'a': 1.3168997448892081, 'aic': -40.05014254953394}
+5687.3s 350 logarithmic: {'a': 0.3078662023932401, 'b': 1.183111870982141, 'aic': -39.40655808113179}
+5687.3s 351 saturating: {'S': 2.395398107798165, 'r0': np.float64(2.028643216080402), 'aic': -20.759266850371482}
+5687.3s 352 
+5687.3s 353 Seed-level (not cell-mean) correlations vs mean_sr_final:
+5687.3s 354 {'x': 'mean_sr_final', 'y': 'final_ppl', 'n': 16, 'r': -0.9835, 'p': 0.0}
+5687.3s 355 {'x': 'mean_sr_final', 'y': 'truthfulqa_mc1', 'n': 16, 'r': 0.7749, 'p': 0.000422}
+5687.3s 356 {'x': 'mean_sr_final', 'y': 'arc_easy', 'n': 16, 'r': 0.735, 'p': 0.001181}
+5687.3s 357 ✓ /kaggle/working/spectral_Qwen2.5-1.5B_metadata.json
+5687.3s 358 
+5687.3s 359 DONE in 93.6 min
+5690.8s 360 Traceback (most recent call last):
+5690.8s 361 File "<string>", line 1, in <module>
+5690.8s 362 File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 131, in execute_notebook
+5690.8s 363 raise_for_execution_errors(nb, output_path)
+5690.8s 364 File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+5690.8s 365 raise error
+5690.8s 366 papermill.exceptions.PapermillExecutionError:
+5690.8s 367 ---------------------------------------------------------------------------
+5690.8s 368 Exception encountered at "In [3]":
+5690.8s 369 ---------------------------------------------------------------------------
+5690.8s 370 FileNotFoundError                         Traceback (most recent call last)
+5690.8s 371 /tmp/ipykernel_23/3093819495.py in <cell line: 0>()
+5690.8s 372 5 dst = "/kaggle/working"
+5690.8s 373 6
+5690.8s 374 ----> 7 for filename in os.listdir(src):
+5690.8s 375 8     source = os.path.join(src, filename)
+5690.8s 376 9     target = os.path.join(dst, filename)
+5690.8s 377 
+5690.8s 378 FileNotFoundError: [Errno 2] No such file or directory: '/mnt/user-data/outputs'
+5690.8s 379 
+5693.0s 380 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+5693.0s 381 cells[i][c] = re.sub('\\\\\|', '|', cell)
+5693.1s 382 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+5693.1s 383 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+5693.8s 384 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+5694.3s 385 [NbConvertApp] Writing 967162 bytes to __notebook__.ipynb
+5696.5s 386 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+5697.7s 387 [NbConvertApp] Writing 1253047 bytes to __results__.html
